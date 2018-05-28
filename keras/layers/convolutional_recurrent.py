@@ -1277,6 +1277,7 @@ class ConvGRU2DCell(Layer):
         else:
             h_tm1_z = h_tm1
             h_tm1_r = h_tm1
+            h_tm1_h = h_tm1
 
         x_z = self.input_conv(inputs_z, self.kernel_z, self.bias_z,
                               padding=self.padding)
